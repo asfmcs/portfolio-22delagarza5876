@@ -1,0 +1,33 @@
+h2{
+  text-align: center
+}
+p{
+  text-align: center
+}
+h1{
+  text-align: center
+}
+ol{
+  text-align: center
+}
+p {
+  font-family: "Comic Sans", monospace, serif;
+}
+  h1 {
+  font-family: "Comic Sans", monospace, serif;
+}
+  h2 {
+  font-family: "Comic Sans", monospace, serif;
+}
+ol {
+  font-family: "Comic Sans", monospace, serif;
+}
+body{
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(244, 194, 194));
+}
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+h2 {
+  text-shadow: 2px 2px 5px red;
+}

@@ -1,0 +1,42 @@
+body{
+  background-image: linear-gradient(to bottom right, rgb(234, 249, 249), rgb(103, 219, 183));
+}
+
+h1 {text-align: center}
+h2 {text-align: center}
+p {text-align: center;}
+ul {text-align: center;}
+ol {text-align: center;}
+.center
+table {border-collapse: collapse;}
+table {width: 50%;}
+table, th, td { border: 1px solid black; }
+table {text-align: center;}
+table{
+  margin-right:auto;
+  margin-left:auto;
+}
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+ol {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+ul {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+table {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+#foto{
+  text-align: center
+}
+#fotini{
+  text-align: center
+}
