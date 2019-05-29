@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>3-3 Maze</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.codehs.com/gulp/ec071a764d83f34910ba21fab0b0f0cc20293542/chs-js-lib/chs.js"></script>
+
+
+<style>
+canvas {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+pre {
+    border: 1px solid black;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-color: #F5F5F5;
+}
+</style>
+
+</head>
+
+<body>
+<h1>3-3 Maze</h1>
+
+
+
+<canvas
+width="400"
+height="500"
+class="codehs-editor-canvas"></canvas>
+<pre id="console"></pre>
+
+<script>
+window.onload = function() {
+
+    function DrawMaze(x, y, color){
+    var background = new Rectangle(getWidth(), getHeight());
+    background.setColor(color);
+    background.setPosition(0, 0);
+    add(background);
+}
+
+function start(){
+    DrawMaze (0, 0, Color.black);
+     var centerX = getWidth()/2;
+    var centerY = getHeight()/2;
+    drawGhost(centerX, centerY, Color.red);
+    drawGhost(100,240, Color.green);
+    drawGhost(300, 100, Color.cyan);
+    drawGhost(40, 100, Color.orange);
+    drawGhost(170, 100, Color.yellow);
+    
+    drawPacman(50, 0, 90, 0);
+    dot(Color.black, 245, 380);
+    dot(Color.yellow, 300, 400);
+    dot(Color.yellow, 340, 400);
+    dot(Color.yellow, 380, 400);
+}
+
+function drawGhost(centerX, centerY, color){
+    var rectangle = new Rectangle (60, 40);
+    rectangle.setColor(color);
+    rectangle.setPosition(centerX, centerY);
+    add(rectangle);
+    
+    var circle = new Circle(30);
+	circle.setColor(color);
+	circle.setPosition(centerX+30, centerY);
+	add(circle);
+	
+	var eye3 = new Circle(10);
+	eye3.setColor(Color.white);
+	eye3.setPosition(centerX+20, centerY);
+	add(eye3);
+	
+	var eye2 = new Circle(10);
+	eye2.setColor(Color.white);
+	eye2.setPosition(centerX+45, centerY);
+	add(eye2);
+	
+	var pupil1 = new Circle(5);
+	pupil1.setColor(Color.blue);
+	pupil1.setPosition(centerX+24, centerY);
+	add(pupil1);
+	
+	var pupil2 = new Circle(5);
+	pupil2.setColor(Color.blue);
+	pupil2.setPosition(centerX+49, centerY);
+	add(pupil2);
+	
+	
+	var piernitas = new Circle(12);
+	piernitas.setColor(color);
+	piernitas.setPosition(centerX+48, centerY+43);
+	add(piernitas);
+	
+	var piernitas2 = new Circle(12);
+	piernitas2.setColor(color);
+	piernitas2.setPosition(centerX+30, centerY+43);
+	add(piernitas2);
+	
+	var piernitas3 = new Circle(12);
+	piernitas3.setColor(color);
+	piernitas3.setPosition(centerX+12, centerY+43);
+	add(piernitas3);
+	
+    }
+    
+    function dot(color, x, y){
+    var dot = new Circle(8);
+    dot.setColor(color);
+    dot.setPosition(x,y);
+    add(dot);
+}
+
+function drawPacman(radius, start, end, unit){
+    var drawPacman = new Arc(60, 180, 90, 0);
+    drawPacman.setPosition(250, 400);
+    drawPacman.setColor(Color.yellow);
+    drawPacman.setRotation(130);
+    add(drawPacman);
+}
+
+
+    if (typeof start === 'function') {
+        start();
+    }
+};
+</script>
+
+</body>
+</html>
